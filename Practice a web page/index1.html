@@ -1,0 +1,257 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .container {
+            width: 1100px;
+            max-width: 100%;
+            background: #1e293b;
+            padding: 45px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .label {
+            display: inline-block;
+            background: #2563eb;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .stage {
+            width: 125px;
+            min-height: 145px;
+            background: #334155;
+            border-radius: 15px;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .stage:hover {
+            transform: translateY(-8px);
+            background: #475569;
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .stage h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .stage p {
+            font-size: 12px;
+            color: #cbd5e1;
+            line-height: 1.4;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: #60a5fa;
+            font-weight: bold;
+        }
+
+        .ci-cd {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            width: 45%;
+            padding: 22px;
+            border-radius: 15px;
+            background: #0f172a;
+            border: 1px solid #475569;
+        }
+
+        .box h2 {
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+            .pipeline {
+                flex-direction: column;
+            }
+
+            .ci-cd {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="label">DEVOPS AUTOMATION</div>
+
+        <h1>CI/CD PIPELINE</h1>
+
+        <p class="subtitle">
+            Continuous Integration & Continuous Delivery
+        </p>
+
+        <div class="pipeline">
+
+            <div class="stage">
+                <div class="icon">👨‍💻</div>
+                <h3>Developer</h3>
+                <p>Write and update application code</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🔀</div>
+                <h3>Git</h3>
+                <p>Commit and push code changes</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">⚙️</div>
+                <h3>Build</h3>
+                <p>Compile and package the application</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🧪</div>
+                <h3>Test</h3>
+                <p>Run automated tests</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🐳</div>
+                <h3>Docker</h3>
+                <p>Build application container image</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">☁️</div>
+                <h3>Deploy</h3>
+                <p>Deploy application to cloud/server</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="stage">
+                <div class="icon">🚀</div>
+                <h3>Production</h3>
+                <p>Application available to users</p>
+            </div>
+
+        </div>
+
+        <div class="ci-cd">
+
+            <div class="box">
+                <h2>🔄 CI</h2>
+                <p>
+                    Continuous Integration automatically builds
+                    and tests code whenever developers push changes.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>🚀 CD</h2>
+                <p>
+                    Continuous Delivery or Deployment automates
+                    releasing the tested application to environments.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Code → Build → Test → Package → Deploy → Monitor
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
